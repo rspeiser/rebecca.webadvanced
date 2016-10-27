@@ -1,0 +1,268 @@
+html, body { 
+
+ 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 120%;
+  height: 120%;
+  overflow: hidden;
+ 
+
+}
+
+
+.freak {
+   width: 85%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+  
+}
+    
+.enter {
+  
+   
+ 
+    position: absolute;
+    color: white;
+    z-index: 100;
+    font-family: futura;
+    font-size: 30px;
+    font: bold;
+    bottom:20px;
+    right: 20px;
+
+  
+}
+
+.back {
+  
+   
+ 
+    position: absolute;
+    
+    z-index: 100;
+    font-family: futura;
+    font-size: 20px;
+    font: bold;
+    top:20px;
+    left: 20px;
+
+  
+}
+
+a {
+  color: #F6FF00;
+  text-decoration: none;
+}
+
+.hilary {
+  
+  width: 15%;
+  height: 45%;
+  z-index: 1000;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  z-index: 10000;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+  
+  
+}
+
+
+.hilary:hover {
+  
+  opacity: 0;
+}
+
+
+
+
+.trump {
+  
+  width: 15%;
+  height: 45%;
+  z-index: 1000;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index: 10000;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+  
+}
+
+.trump:hover {
+  
+  opacity: 0;
+}
+
+.card {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+.card2 {
+  position: absolute;
+  width: 36%;
+  height: 40%;
+  bottom: -25%;
+  left: 50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+.stage {
+  
+  z-index: -1000;
+  position: absolute;
+  margin-top: 415px;
+  
+}
+
+.trump1 {
+  position: absolute;
+  width: 10%;
+  height: 25%;
+  top: 20%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+.trump2 {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  top: 20%;
+  left: 35%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+.trump3 {
+  position: absolute;
+  width: 12%;
+  height: 27%;
+  top: 20%;
+  left: 75%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+.trump4 {
+  position: absolute;
+  width: 12%;
+  height: 30%;
+  top: 50%;
+  left: 25%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+.trump5 {
+  position: absolute;
+  width: 12%;
+  height: 30%;
+  top: 50%;
+  left: 45%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+.trump6 {
+  position: absolute;
+  width: 12%;
+  height: 30%;
+  top: 47%;
+  left: 65%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+.trump7 {
+  position: absolute;
+  width: 12%;
+  height: 30%;
+  top: 47%;
+  left: 65%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+  
+}
+
+
+.tweetface {
+  position: absolute;
+  width: 12%;
+  height: 30%;
+  top: 70%;
+  left: 60%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+  
+}
+
+.tweetface2 {
+  position: absolute;
+  width: 12%;
+  height: 30%;
+  top: 70%;
+  left: 40%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+  
+}
+
+.redbuzzer {
+  
+width: 3.7%;
+bottom: 12%;
+left: 27%;
+position: absolute;
+
+}
+
+.bluebuzzer {
+  
+width: 5%;
+bottom: 10%;
+right: 25%;
+position: absolute;
+  
+}
+
+.speech {
+  
+width: 45%;
+height: 40%;
+top: 10%;
+right: 50%;
+position: absolute;
+z-index: -100;
+  
+}
