@@ -33,10 +33,10 @@ html, body {
     color: white;
     z-index: 100;
     font-family: futura;
-    font-size: 30px;
+    font-size: 40px;
     font: bold;
-    bottom:20px;
-    right: 20px;
+    bottom:30px;
+    right: 190px;
 
   
 }
@@ -292,6 +292,11 @@ position: absolute;
   
 }
 
+#typed-strings {
+  
+  opacity: 0 ;
+}
+
 .score {
   
   font-family: helvetica;
@@ -301,3 +306,13 @@ position: absolute;
   
 }
 
+.answer {
+  
+  font-family: helvetica;
+  font-size: 250px;
+  color: yellow;
+  text-align: left;
+  margin-left: 12px;
+  transform: rotate(30);
+  
+}
