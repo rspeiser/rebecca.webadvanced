@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weathered</title>
+</head>
+    <body>
+
+        
+        <div class="results"></div>
+        
+        <div class="shape"></div>
+        <div class="shape2"></div>
+        <div class="shape3"></div>
+        <div class="shape4"></div>
+       
+        <div class="menu">
+            <div class="description"> 
+                                     Location:<br><br><br>
+                                     Humidity:<br><br><br>
+                                     Feels Like:<br><br><br>
+                                      
+            </div>
+            <img src="img/menu.svg">
+        </div>
+        
+        
+        
+        <style>
+        
+        body {
+            
+            width: 100vh;
+            overflow-y:hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .shape {
+            
+            width: 100%;
+            background-color: #032d70;
+            opacity: 0.5;
+            position: absolute;
+            height: 100%;
+            
+        }
+        
+           .shape2 {
+            
+            width: 300px;
+            margin-left: 400px;
+            height: 100px;
+            background-color: #032d70;
+            opacity: 0.5;
+            position: relative;
+            top: 90px;
+            
+        }
+        
+             .shape3 {
+            
+            width: 400px;
+           
+            height: 400px;
+            background-color: #032d70;
+            opacity: 0.5;
+            position: relative;
+            top: 150px;
+            left: 98%;
+            
+        }
+        
+        
+             .shape4 {
+            
+            width: 200px;
+            margin-left: 50px;
+            height: 600px;
+            background-color: #032d70;
+            opacity: 0.5;
+            position: relative;
+            top: -450px;
+            
+             }
+             
+             .menu {
+                 position: fixed;
+                 width: 35px;
+                 z-index: 100;
+                 top: 20px;
+                 right: 50px;
+                 opacity: 0.2;
+        
+                 
+             }
+            
+                .menu:hover {
+                 position: fixed;
+                 width: 35px;
+                 z-index: 100;
+                 top: 20px;
+                 right: 50px;
+                 
+        
+                 
+             }
+             
+       
+            .description {
+                
+                display:none;
+                position:fixed;
+                opacity: 0.4;
+                right: 20px;
+                top: 80px;
+                font-family: helvetica;
+                font-size: 20px;
+                text-align: left;
+                text-decoration: underline;
+                
+            }
+
+            
+            
+
+
+            
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/tutorial2.js"></script>
+        <script src="js/jquery2.js"></script>
+    </body>
+</html>

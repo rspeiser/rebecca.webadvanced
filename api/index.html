@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weathered</title>
+</head>
+    <body>
+
+<iframe src="http://brendangriffiths.com" width="400" height="300">
+
+</iframe>
+
+        
+        <div class="results"></div>
+       
+    <div class="menu">
+    <div class="description"> 
+                                     Location: <span class="location">New York, NY</span>
+                                     <br><br><br>
+                                     Precipitation: <span class="precip"></span><br><br><br>
+                                     Rainfall: <span class="rain"></span><br><br><br>
+                                      
+    </div>
+    <img src="img/menu.svg">
+    </div>
+        
+        <div class="hexagon"></div>
+        
+        
+        
+        <div class="rainfall">
+            
+        </div>
+     
+        
+        <style>
+        
+        body {
+            
+            width: 100vh;
+            overflow-y: hidden;
+            margin: 0;
+            padding: 0;
+            
+            
+        
+        
+            
+        }
+        
+                .hexagon {
+                 position: absolute;
+                 width: 300px; 
+                 height: 173.21px;
+                 background-color: black;
+                 margin: 86.60px;
+                 left: 32%;
+                 top: 150px;
+                 
+                 display: none;
+
+                }
+        
+                .hexagon:before,
+                .hexagon:after 
+                
+                {
+                  content: "";
+                  position: absolute;
+                  border-left: 150px solid transparent;
+                  border-right: 150px solid transparent;
+                }
+
+                .hexagon:before {
+                 bottom: 100%;
+                 border-bottom: 86.60px solid black;
+                }
+
+                .hexagon:after {
+                 top: 100%;
+                 width: 0;
+                 border-top: 86.60px solid black;
+                }
+
+
+               
+
+                .hexagon {
+   
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float:left;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+     .menu {
+                 position: absolute;
+                 width: 40px;
+                 z-index: 100;
+                 top: 10px;
+                 right: 10px;
+                 opacity: 0.2;
+        
+                 
+             }
+            
+                .menu:hover {
+                 position: absolute;
+                 width: 40px;
+                 z-index: 100;
+                 top: 10px;
+                 right: 10px;
+                 opacity: 0.5;
+        
+                 
+             }
+             
+            .description {
+                
+                display:none;
+                position:fixed;
+                opacity: 0.4;
+                right: 20px;
+                top: 80px;
+                font-family: helvetica;
+                font-size: 20px;
+                text-align: left;
+                text-decoration: underline;
+                
+            }
+            
+
+            
+
+            
+        </style>
+        
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/tutorial.js"></script>
+    </body>
+</html>

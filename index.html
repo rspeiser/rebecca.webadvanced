@@ -1,79 +1,96 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src=
-        "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <meta charset=utf-8 />
-        <body>
-            <title>REBECCA SPEISER</title>
-            
-            <link rel="stylesheet" href="style.css"/>
-            
-            <div class="helloworld">
-            <a href="helloworld/1.html">Hello World</a>
-            </div>
-            
-            <div class="pattern">
-            <a href="pattern/index.html">Pattern</a>
-            </div>
-            
-            <div class="generator">
-            <a href="generate/index.html">Generator</a>
-            </div>
-            
-            <div class="cookie">
-            <a href="cookie/index.html">Cookie</a>
-            </div>
-            
-            <div class="domain">
-            <a href="http://trumprightup.tk/">Domain</a>
-            </div>
-            
-            <div class="personal">
-            <a href="website/1.html">rebeccaspeiser.com </a>
-            </div>
-            
-         
-            
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-           
-  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weathered</title>
+</head>
+    <body>
 
-            
         
+        <div class="results"></div>
         
+        <div class="hexagon"></div>
         
- 
-            <div class="rebecca">
-             <span>R</span><span>E</span><span>B</span><span>E</span><span>C</span><span>C</span><span>A</span><span>
-             </div>
-             
-             <div class="speiser">
-             <span>S</span><span>P</span><span>E</span><span>I</span><span>S</span><span>E</span><span>R</span><span>
-             </div>
-             
-              
-              
-             
-             
-             
-                 
-          
+        <style>
+        
+                .hexagon:before,
+                .hexagon:after {
+                  content: "";
+                  position: absolute;
+                  width: 0;
+                  border-left: 150px solid transparent;
+                  border-right: 150px solid transparent;
+                }
 
+                .hexagon:before {
+                 bottom: 100%;
+                 border-bottom: 86.60px solid black;
+                }
+
+                .hexagon:after {
+                 top: 100%;
+                 width: 0;
+                 border-top: 86.60px solid black;
+                }
+
+
+                .hexagon {
+                 position: absolute;
+                 width: 300px; 
+                 height: 173.21px;
+                 background-color: black;
+                 margin: 86.60px 0;
+
+                }
+
+                .hexagon {
+   
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float:left;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 
             
-        </body>
-    </head>
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/tutorial.js"></script>
+    </body>
 </html>
-         
-            
-      
-      
-         
-
-                
-                
- 
