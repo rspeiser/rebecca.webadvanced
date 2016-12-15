@@ -14,17 +14,24 @@ function getWeather() {
 
         } else {
             
-            console.log(data.query.results.channel.wind.direction);
+            console.log(data.query.results)
+            console.log(data.query.results.channel.wind.speed);
+            console.log(data.query.results.channel.conditionCodeNum);
+            
+            
+            
             
             var conditionCodeNum = data.query.results.channel.item.condition.code;
             var umbrellaNum = 5;
-            console.log(conditionCodeNum);
-            if (conditionCodeNum == "9" || conditionCodeNum == "11" || conditionCodeNum == "3" || conditionCodeNum == "17" 
             
-            ) {
-                console.log(conditionCodeNum)
-                umbrellaNum = 15;
+        
+        if (conditionCodeNum == "9" || conditionCodeNum == "11" || conditionCodeNum == "3" || conditionCodeNum == "17" ); 
+            {
+               
+                umbrellaNum = 20;
             }
+            
+            
             
             for (var i = 0; i < umbrellaNum; i++) {
                 $("body").append('<div class="hexagon"></div>');
@@ -33,14 +40,18 @@ function getWeather() {
             $(".hexagon").each(function() {
                 $(this).css("top",(Math.random()*$(window).height() )-300);
                 $(this).css("left",(Math.random()*$(window).width() )-300);
+                
     
             });
  
-            var windDirection = data.query.results.channel.wind.direction;
-            var rotation = "translate(-50%,-50%) rotate(" + windDirection + "deg)";
+           
+           
             var windSpeed = data.query.results.channel.wind.speed;
+            var rotation = "translate(-50%,-50%) rotate(" + windSpeed + "";
             var conditionCode = data.query.results.channel.item.condition.text;
             var blur = "blur(" + windSpeed + "px)";
+            var humidity = data.query.results.channel.humidity;
+            
             
             var windSpeedMS = (2000 - (windSpeed * 60)) + "ms";
             
@@ -48,9 +59,8 @@ function getWeather() {
         
             
             $(".cond").html(conditionCode);
-            
-            var humidity = data.query.results.channel.humidity;
-            $(".rain").html(humidity);
+            $(".wind").html(windSpeed);
+            $(".humidity").html(humidity);
             
             
             $(".hexagon").css("transform", rotation);
@@ -67,3 +77,5 @@ getWeather();
 
 
 
+         
+        
