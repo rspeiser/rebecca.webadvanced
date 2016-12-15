@@ -2,35 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Weathered</title>
+    <title>weatherornot</title>
 </head>
     <body>
 
-<iframe src="http://brendangriffiths.com" width="400" height="300">
+<iframe src="http://webadvanced.tk/" width="400" height="300">
 
 </iframe>
 
         
-        <div class="results"></div>
-       
-    <div class="menu">
-    <div class="description"> 
-                                     Location: <span class="location">New York, NY</span>
-                                     <br><br><br>
-                                     Precipitation: <span class="precip"></span><br><br><br>
-                                     Rainfall: <span class="rain"></span><br><br><br>
+<div class="menu">
+                                     Location: <span class="location">New York, NY</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
+                                     Conditions: <span class="cond"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     Humidity: <span class="humidity"></span>
                                       
-    </div>
-    <img src="img/menu.svg">
-    </div>
+                                    
+   </div>
         
         <div class="hexagon"></div>
         
         
         
-        <div class="rainfall">
-            
-        </div>
+        <div class="rainfall"></div>
      
         
         <style>
@@ -49,17 +43,21 @@
         }
         
                 .hexagon {
-                 position: absolute;
+                 position: fixed;
                  width: 300px; 
                  height: 173.21px;
                  background-color: black;
                  margin: 86.60px;
                  left: 32%;
                  top: 150px;
-                 
+                 z-index:1000;
                  display: none;
+                     animation-name: spin;
+                animation-duration: 4000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
 
-                }
+        }
         
                 .hexagon:before,
                 .hexagon:after 
@@ -85,40 +83,8 @@
 
                
 
-                .hexagon {
-   
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: 4000ms;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-    
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    float:left;
-}
 
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
+
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -129,28 +95,6 @@
 }
 
 
-     .menu {
-                 position: absolute;
-                 width: 40px;
-                 z-index: 100;
-                 top: 10px;
-                 right: 10px;
-                 opacity: 0.2;
-        
-                 
-             }
-            
-                .menu:hover {
-                 position: absolute;
-                 width: 40px;
-                 z-index: 100;
-                 top: 10px;
-                 right: 10px;
-                 opacity: 0.5;
-        
-                 
-             }
-             
             .description {
                 
                 display:none;
@@ -166,7 +110,45 @@
             }
             
 
-            
+
+iframe {
+    border: 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+}
+
+.menu {
+    
+    font-family: helvetica;
+    font-size: 18px;
+    left: 23%;
+    top: 95%;
+    color: black;
+    opacity: 0.1;
+    width: 1000px;
+    position: absolute;
+    
+    
+    
+    
+}
+
+.menu:hover {
+    
+       font-family: helvetica;
+    font-size: 18px;
+    left: 23%;
+    top: 95%;
+    color: black;
+    opacity: 0.5;
+    width: 1000px;
+    position: absolute;
+    
+}
+
 
             
         </style>
