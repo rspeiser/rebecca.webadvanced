@@ -47,7 +47,7 @@ function getWeather() {
         if (conditionCodeNum == "31" || conditionCodeNum == "32" || conditionCodeNum == "36"); 
             {
                
-                umbrellaNum = 3;
+                umbrellaNum = 5;
             }
                         
             
@@ -72,7 +72,7 @@ function getWeather() {
             
             
             var humidity = data.query.results.channel.atmosphere.humidity;
-            var blur = "blur(" + humidity + "px)";
+            var blur = "blur(" + humidity + "px";
             console.log(humidity);
            
         
