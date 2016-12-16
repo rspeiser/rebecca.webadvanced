@@ -13,23 +13,36 @@ function getWeather() {
             console.log("Location not found: " + location + "!");
 
         } else {
+            // this logs the entire results object
+            console.log(data.query.results);
             
-            console.log(data.query.results)
+            //this logs the wind speed
             console.log(data.query.results.channel.wind.speed);
-            console.log(data.query.results.channel.conditionCodeNum);
+            
+            //this logs the condition code
+            console.log(data.query.results.channel.item.condition.code);
+            
             
             
             
             
             var conditionCodeNum = data.query.results.channel.item.condition.code;
-            var umbrellaNum = 5;
+            var umbrellaNum = 10;
             
-        
-        if (conditionCodeNum == "9" || conditionCodeNum == "11" || conditionCodeNum == "3" || conditionCodeNum == "17" ); 
+        //if conditionCodeNum is 9, 11, 3, or 17, set umbrellaNum to 20
+        if (conditionCodeNum == "9" || conditionCodeNum == "11" || conditionCodeNum == "12" ); 
             {
                
-                umbrellaNum = 20;
+                umbrellaNum = 5;
             }
+            
+         //if conditionCodeNum is 20 or 22, set umbrellaNum to 30  
+        if (conditionCodeNum == "17" || conditionCodeNum == "45"); 
+            {
+               
+                umbrellaNum = 30;
+            }
+            
             
             
             
@@ -47,10 +60,17 @@ function getWeather() {
            
            
             var windSpeed = data.query.results.channel.wind.speed;
+            console.log(windSpeed);
             var rotation = "translate(-50%,-50%) rotate(" + windSpeed + "";
             var conditionCode = data.query.results.channel.item.condition.text;
-            var blur = "blur(" + windSpeed + "px)";
-            var humidity = data.query.results.channel.humidity;
+            
+            
+            var humidity = data.query.results.channel.atmosphere.humidity;
+            var blur = "blur(" + humidity + "px)";
+            $(".hexagon").css("opacity", 0.5);
+            console.log(humidity);
+           
+        
             
             
             var windSpeedMS = (2000 - (windSpeed * 60)) + "ms";
@@ -65,6 +85,7 @@ function getWeather() {
             
             $(".hexagon").css("transform", rotation);
             $(".hexagon").css("-webkit-filter", blur);
+            
             $(".hexagon").fadeIn(1000);
         }
         

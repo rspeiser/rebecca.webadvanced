@@ -68,6 +68,18 @@ A:active {text-decoration: none; color: #f528fc;}
     
 }
 
+
+.sender {
+    position: absolute;
+    width: 300px;
+    left: 50px;
+    top: 420px;
+    font-family: helvetica;
+    z-index: 1000;
+    
+    
+}
+
 .api {
     position: absolute;
     width: 100px;
@@ -84,7 +96,7 @@ A:active {text-decoration: none; color: #f528fc;}
     position: absolute;
     width: 100px;
     left: 50px;
-    top: 420px;
+    top: 460px;
     font-family: helvetica;
     z-index: 1000;
     
