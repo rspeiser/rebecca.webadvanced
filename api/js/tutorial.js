@@ -37,13 +37,19 @@ function getWeather() {
             }
             
          //if conditionCodeNum is 20 or 22, set umbrellaNum to 30  
-        if (conditionCodeNum == "17" || conditionCodeNum == "45"); 
+        if (conditionCodeNum == "17" || conditionCodeNum == "45" || conditionCodeNum == "3"); 
             {
                
                 umbrellaNum = 30;
             }
             
-            
+        
+        if (conditionCodeNum == "31" || conditionCodeNum == "32" || conditionCodeNum == "36"); 
+            {
+               
+                umbrellaNum = 3;
+            }
+                        
             
             
             for (var i = 0; i < umbrellaNum; i++) {
@@ -67,7 +73,6 @@ function getWeather() {
             
             var humidity = data.query.results.channel.atmosphere.humidity;
             var blur = "blur(" + humidity + "px)";
-            $(".hexagon").css("opacity", 0.5);
             console.log(humidity);
            
         
